@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Em breve — Projeto Odikos</title>
+  <meta name="description" content="Em breve — Projeto Odikos: o futuro CRM da sua transportadora." />
+  <meta property="og:title" content="Em breve — Projeto Odikos" />
+  <meta property="og:description" content="O futuro CRM da sua transportadora." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#1A3D7C" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style>
+    /* Reset básico */
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color: #0F1E3A;
+      background: radial-gradient(1200px 800px at 80% -10%, #294F99 0%, #1A3D7C 40%, #102A57 75%, #0B1E40 100%);
+      display: grid;
+      place-items: center;
+    }
+    .wrap {
+      width: min(92vw, 720px);
+      padding: 32px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 24px;
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    }
+    .brand {
+      font-size: clamp(22px, 4.5vw, 28px);
+      font-weight: 800;
+      letter-spacing: 0.3px;
+      display: inline-flex; align-items: center; gap: 12px;
+      margin-bottom: 8px;
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .logo {
+      width: 40px; height: 40px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(26px, 5vw, 36px);
+      color: #ffffff;
+      letter-spacing: 0.2px;
+    }
+    p.tagline {
+      margin: 0 0 24px;
+      font-size: clamp(16px, 3.5vw, 18px);
+      color: #D9E5FF;
+      opacity: 0.95;
+    }
+    .soon {
+      margin-top: 6px;
+      display: inline-block;
+      margin: 8px 0 24px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.12);
+      color: #E8F0FF;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+    .cta {
+      display: inline-block;
+      padding: 14px 20px;
+      border-radius: 14px;
+      border: 2px solid transparent;
+      background: #FF7A00;
+      color: #071833;
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform 0.08s ease, box-shadow 0.2s ease, background 0.2s ease;
+      box-shadow: 0 8px 18px rgba(255, 122, 0, 0.35);
+    }
+    .cta:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 10px 24px rgba(255, 122, 0, 0.45);
+      background: #ff8f26;
+    }
+    .cta:active { transform: translateY(0); }
+    .footer {
+      margin-top: 28px;
+      font-size: 14px;
+      color: #C5D6FF;
+      opacity: 0.8;
+    }
+    .pill {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 10px 12px;
+      border-radius: 14px;
+      background: rgba(255,255,255,0.08);
+      color: #DDE8FF;
+      margin-top: 14px;
+      font-size: 14px;
+    }
+    .note {
+      margin-top: 18px;
+      font-size: 13px;
+      color: #C5D6FF;
+      opacity: 0.85;
+    }
+    /* Acessibilidade */
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0,0,0,0); border: 0;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap" role="main" aria-labelledby="t">
+    <div class="brand">
+      <strong>Odikos</strong>
+    </div>
+
+    <span class="soon" aria-label="Em breve">Em breve — Projeto Odikos</span>
+
+    <h1 id="t">O futuro CRM da sua transportadora</h1>
+    <p class="tagline">CRM e HUB logístico com foco total nas transportadoras: funis de cotação, contratos, armazenagem e BID — simples, direto e eficiente.</p>
+
+    <a class="cta" href="mailto:contato@odikos.com?subject=Quero%20ser%20avisado%20sobre%20o%20lan%C3%A7amento%20do%20Odikos&body=Ol%C3%A1!%20Quero%20ser%20avisado(a)%20quando%20o%20Odikos%20for%20lan%C3%A7ado.%20Meu%20nome%3A%20_____%0D%0AMinha%20empresa%3A%20_____%0D%0AMeu%20telefone%3A%20_____%0D%0AObrigado!">
+      Avise-me quando disponível
+    </a>
+
+    <div class="pill" aria-label="Contato">
+      <span>📧</span><span>contato@odikos.com</span>
+    </div>
+
+    <div class="footer">© <span id="y"></span> Odikos — todos os direitos reservados.</div>
+  </main>
+
+  <script>
+    // Atualiza ano automáticamente
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
